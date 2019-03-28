@@ -21,7 +21,7 @@ public class BaseApplication extends Application{
         OkGo.getInstance().init(this);
         MyPageManager.initWhenAppOnCreate(getApplicationContext(),R.layout.pager_empty,R.layout.pager_loading,R.layout.pager_error);
         Fresco.initialize(this);
-        ImagePickerInitialize.initialize();
+        ImagePickerInitialize.initialize();//1111
         //1
     }
 
