@@ -20,11 +20,8 @@ public class BaseApplication extends Application{
         mAppliication = this;
         OkGo.getInstance().init(this);
         MyPageManager.initWhenAppOnCreate(getApplicationContext(),R.layout.pager_empty,R.layout.pager_loading,R.layout.pager_error);
-        Fresco.initialize(this);//2222
-        ImagePickerInitialize.initialize();
         Fresco.initialize(this);
-        ImagePickerInitialize.initialize();//1111
-        //11
+        ImagePickerInitialize.initialize();
     }
 
     public static Context getContext() {
